@@ -1,0 +1,156 @@
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #F7ECDE;
+}
+
+.header{
+    width: fit-content;
+    margin: auto;
+}
+
+h1{
+    font-family: "Pacifico", cursive;
+    padding-top: 70px;
+    font-weight: 500;
+    font-size: 50px;
+    color: rgb(53, 46, 40);
+    position: relative;
+    z-index: 10;
+    margin-bottom: 60px;
+
+}
+
+h1::after{
+    content: "";
+    width: 280px;
+    height: 20px;
+    background-color: #FEC260;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -5;
+    transition: all 0.4s;
+}
+
+h1:hover::after{
+    height: 40px;
+}
+
+
+h2{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    border-top: dotted 2px rgb(53, 46, 40);
+    padding-top: 20px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+h2 i:nth-child(1){
+    color: #3ca55c;
+    font-size: 25px;
+}
+
+h2 i:nth-child(2){
+    color: #b5ac49;
+    font-size: 25px;
+}
+
+.form{
+    border-bottom: dotted 2px rgb(53, 46, 40);
+    padding-bottom: 30px;
+}
+
+label{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 600;
+}
+
+.form-control:focus{
+    box-shadow: #fec16062 0px 0px 0px 4px;
+    border-color: #D99C39;
+}
+
+.submit{
+    background-color: #d1512d;
+    color: #fff !important;
+    transition: all 0.4s;
+    font-family: "PT Sans Caption", sans-serif;
+}
+
+.submit:hover{
+    background-color: #bb4120;
+    border-color: #a03315;
+}
+
+table .visit{
+    background-color: #9eb23b;
+    color: #fff !important;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+
+table .visit:hover{
+    background-color: #8a9e23;
+    border-color: #6e8018;
+}
+
+table .delete{
+    background-color: #eb1d36;
+    color: #fff !important;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+
+table .delete:hover{
+    background-color: #d30820;
+    border-color: #ba081d;
+}
+
+.inner-box span{
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+}
+
+.inner-box span:nth-child(1){
+    background-color: #F15F5D;
+    
+}
+
+.inner-box span:nth-child(2){
+    background-color: #FEBE2E;
+}
+
+.inner-box span:nth-child(3){
+    background-color: #4DB748;
+}
+
+.inner-box p{
+    font-family: "Bree Serif", serif;
+    font-size: 21px;
+    color: rgb(53, 46, 40);
+    margin-bottom: 15px;
+}
+
+.inner-box li{
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 18px;
+    color: rgb(33, 37, 41);
+    margin-bottom: 10px;
+}
+
+.inner-box ul i{
+    color: #BB4120;
+}
